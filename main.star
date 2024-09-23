@@ -86,14 +86,16 @@ def run(plan, args={}):
     keymanager_enabled = args_with_right_defaults.keymanager_enabled
     apache_port = args_with_right_defaults.apache_port
 
-    prefunded_accounts = genesis_constants.PRE_FUNDED_ACCOUNTS
-    if (
-        network_params.preregistered_validator_keys_mnemonic
-        != constants.DEFAULT_MNEMONIC
-    ):
-        prefunded_accounts = get_prefunded_accounts.get_accounts(
-            plan, network_params.preregistered_validator_keys_mnemonic
-        )
+    # prefunded_accounts = genesis_constants.PRE_FUNDED_ACCOUNTS
+    # if (
+    #     network_params.preregistered_validator_keys_mnemonic
+    #     != constants.DEFAULT_MNEMONIC
+    # ):
+    #     prefunded_accounts = get_prefunded_accounts.get_accounts(
+    #         plan, network_params.preregistered_validator_keys_mnemonic
+    #     )
+
+    prefunded_accounts = [] # disable all embed prefunded_accounts
 
     grafana_datasource_config_template = read_file(
         static_files.GRAFANA_DATASOURCE_CONFIG_TEMPLATE_FILEPATH

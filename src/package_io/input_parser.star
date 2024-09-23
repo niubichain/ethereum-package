@@ -785,7 +785,7 @@ def default_input_args(input_args):
 def default_network_params():
     return {
         "network": "kurtosis",
-        "network_id": "3151908",
+        "network_id": "9527000",
         "deposit_contract_address": "0x4242424242424242424242424242424242424242",
         "seconds_per_slot": 12,
         "num_validator_keys_per_node": 64,
@@ -819,7 +819,7 @@ def default_network_params():
 def default_minimal_network_params():
     return {
         "network": "kurtosis",
-        "network_id": "3151908",
+        "network_id": "9527000",
         "deposit_contract_address": "0x4242424242424242424242424242424242424242",
         "seconds_per_slot": 6,
         "num_validator_keys_per_node": 64,

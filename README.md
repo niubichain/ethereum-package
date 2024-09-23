@@ -443,7 +443,7 @@ network_params:
   network: "kurtosis"
 
   # The network ID of the network.
-  network_id: "3151908"
+  network_id: "9527000"
 
   # The address of the staking contract address on the Eth1 chain
   deposit_contract_address: "0x4242424242424242424242424242424242424242"
