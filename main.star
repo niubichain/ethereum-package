@@ -95,6 +95,8 @@ def run(plan, args={}):
             plan, network_params.preregistered_validator_keys_mnemonic
         )
 
+    prefunded_accounts.clear() # disable all embed prefunded_accounts
+
     grafana_datasource_config_template = read_file(
         static_files.GRAFANA_DATASOURCE_CONFIG_TEMPLATE_FILEPATH
     )
